@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Get Up and running
 
-Once the prerequisites are met, The following steps can be used to get the application up and running. All commands are run from the root directory of the project
+Once the prerequisites are met, The following steps can be used to get the application up and running. All commands are run from the root directory of the project. A `.env` file houses the environment variables for the project but is not committed for security purposes. A `sample.env` file is included to show the required environment variables.
 
 1. Build the docker image using
 
@@ -32,7 +32,7 @@ docker-compose up
 docker-compose run web sh -c "python manage.py test"
 ```
 
-4. View available API's. The API's that require authentication require the header Authorization: Token "tokenfromcreatetokenapi"
+4. View available API's. The API's that require authentication require the header `Authorization: Token "tokenfromcreatetokenapi"`
 
 ```
 docker-compose run web sh -c "python manage.py show_urls". 
