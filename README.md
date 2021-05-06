@@ -38,7 +38,7 @@ docker-compose run web sh -c "python manage.py test"
 docker-compose run web sh -c "python manage.py show_urls". 
 ```
 
-5. You can access the available api's after starting up the application using django's browsable api 
+5. You can access the available api's after starting up the application using the base URL
 ```
 http://localhost:8000/
 ```
